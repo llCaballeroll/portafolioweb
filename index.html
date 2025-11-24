@@ -14,17 +14,29 @@
 </head>
 <body>
 
-    <nav>
-        <h1>Luis Angel Caballero Jardon.</h1>
-        <ul>
-            <li><a href="#work">Experiencia</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            <li><a href="#education">Escuela</a></li>
-            <li><a href="#skills">Habilidades</a></li>
-            <li><a href="contacto.html">Contactame</a></li>
-            <li><a href="documentos.html">Documentos oficiales</a></li>
-        </ul>
-    </nav>
+<nav class="navbar">
+    <h1 class="logo">Luis Angel Caballero Jardon.</h1>
+
+    <!-- Botón hamburguesa -->
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Menú -->
+    <ul class="nav-links" id="nav-links">
+        <!-- Añadimos onclick="closeMenu()" a los enlaces internos -->
+        <li><a href="#work" onclick="closeMenu()">Experiencia</a></li>
+        <li><a href="#projects" onclick="closeMenu()">Proyectos</a></li>
+        <li><a href="#education" onclick="closeMenu()">Escuela</a></li>
+        <li><a href="#skills" onclick="closeMenu()">Habilidades</a></li>
+        <!-- Los enlaces externos no necesitan closeMenu, pero se los añadimos por consistencia -->
+        <li><a href="contacto.html">Contactame</a></li>
+        <li><a href="documentos.html">Documentos oficiales</a></li>
+    </ul>
+</nav>
+
 
     <div class="container">
         
@@ -134,13 +146,13 @@
                 <p class="subtitle" style="color: var(--text-main);">Universidad Tecnológica del Valle de Toluca</p>
                 <p>Especialización en Desarrollo de Software y Gestión de Proyectos.</p>
             </div>
-            <div class="card reveal">
+            <!---<div class="card reveal">
                 <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;">
                     <h3>Certificación UX Google</h3>
                     <span class="subtitle">2021</span>
                 </div>
                 <p class="subtitle" style="color: var(--text-main);">Coursera</p>
-            </div>
+            </div> --->
         </section>
 
         <div class="containerdiv"></div>
@@ -244,27 +256,43 @@
         <p>Luis Angel Caballero Jardón. © 2025</p>
     </footer>
 
-    <script>
-        // Intersection Observer para animaciones al hacer scroll
-        const observerOptions = {
-            threshold: 0.1, // Se activa cuando el 10% del elemento es visible
-            rootMargin: "0px 0px -50px 0px"
-        };
+<!-- Agrega la función closeMenu() y el script del hamburguesa al final del body -->
+<script>
+    // Intersection Observer para animaciones al hacer scroll
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px"
+    };
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                    // Opcional: dejar de observar una vez animado
-                    // observer.unobserve(entry.target);
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.reveal').forEach(el => {
-            observer.observe(el);
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            }
         });
-    </script>
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal').forEach(el => {
+        observer.observe(el);
+    });
+
+    /* -----------------------------
+       MENÚ HAMBURGUESA
+    ------------------------------ */
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    function closeMenu() {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+    }
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    });
+</script>
+
 
 </body>
 </html>
