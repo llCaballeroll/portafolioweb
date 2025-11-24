@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Auxiliar TI | Resinas Colores y Compuestos</title>
+    <!--<style>
+      
+    </style> -->
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="back-link">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+            Volver
+        </a>
+        <span style="font-size: 12px; color: var(--text-sec);">Experiencia</span>
+    </nav>
+
+    <header class="role-header">
+        <span class="role-eyebrow">Septiembre 2022 — Mayo 2025</span>
+        <h1 class="role-title">Auxiliar de Tecnologías de la Información</h1>
+        <p class="role-meta">Resinas Colores y Compuestos</p>
+    </header>
+
+    <main class="content-container">
+        
+        <div class="reveal">
+            <p class="intro-text">
+                Desempeñé un rol clave en el soporte técnico y la optimización de procesos internos. Fui el primer punto de contacto para usuarios, garantizando la continuidad operativa mediante el mantenimiento de sistemas y el desarrollo activo de soluciones de software.
+            </p>
+        </div>
+
+        <div class="activity-block reveal">
+            <h2 class="activity-title">Soporte e Infraestructura</h2>
+            <div class="activity-desc">
+                <p>Gestión integral de incidencias de hardware y software, asegurando la estabilidad del entorno Windows.</p>
+                <ul>
+                    <li>Atención eficaz y oportuna como primer nivel de soporte para toda la organización.</li>
+                    <li>Mantenimiento preventivo y correctivo de estaciones de trabajo, garantizando seguridad y disponibilidad.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="activity-block reveal">
+            <h2 class="activity-title">Soporte ERP & Datos</h2>
+            <div class="activity-desc">
+                <p>Atención directa a usuarios finales para la resolución de incidencias en módulos críticos (Compras, Finanzas, Producción) del ERP <strong>TOTVS</strong>.</p>
+                <ul>
+                    <li>Gestión activa de bases de datos en <strong>SQL Server</strong>: mantenimiento, respaldos y depuración.</li>
+                    <li>Ejecución de consultas avanzadas SQL para la generación de reportes y soporte al análisis de datos.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="activity-block reveal">
+            <h2 class="activity-title">Desarrollo ADVPL</h2>
+            <div class="activity-desc">
+                <p>Participación activa en la programación de funcionalidades personalizadas para satisfacer necesidades específicas del negocio:</p>
+                <ul>
+                    <li><strong>SIGAEST (Stock):</strong> Automatización de traslados y generación de etiquetas de inventario.</li>
+                    <li><strong>SIGAFAT (Facturación):</strong> Rutinas para validación de salidas y emisión de facturas.</li>
+                    <li><strong>SIGAFIN (Finanzas):</strong> Reportes financieros masivos, antigüedad de saldos y títulos por pagar.</li>
+                    <li><strong>SIGAPCP (Producción):</strong> Control de procesos, órdenes de producción y solicitud de materiales.</li>
+                    <li><strong>Calidad (SIGAQIP/MT):</strong> Programación de certificados de calidad automotriz y calibración.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="activity-block reveal" style="border-bottom: 1px solid var(--divider);">
+            <h2 class="activity-title">Colaboración</h2>
+            <div class="activity-desc">
+                <p>Trabajo estrecho con las áreas de negocio para traducir necesidades operativas en soluciones tecnológicas, asegurando que las herramientas digitales respondieran eficazmente a la realidad de la operación diaria.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Luis Angel Caballero Jardón. © 2025</p>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

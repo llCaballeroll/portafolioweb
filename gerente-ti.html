@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Gerente TI | Resinas Colores y Compuestos</title>
+    
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="back-link">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+            Volver
+        </a>
+        <span style="font-size: 12px; color: var(--text-sec);">Experiencia</span>
+    </nav>
+
+    <header class="role-header">
+        <span class="role-eyebrow">Septiembre 2022 — Mayo 2025</span>
+        <h1 class="role-title">Gerente de Tecnologías de la Información</h1>
+        <p class="role-meta">Resinas Colores y Compuestos</p>
+    </header>
+
+    <main class="content-container">
+        
+        <div class="reveal">
+            <p class="intro-text">
+                Lideré estratégicamente el departamento con un enfoque proactivo orientado a la eficiencia operativa y la mejora continua. Combiné la supervisión de operaciones diarias con la ejecución de proyectos de largo plazo, alineando la innovación tecnológica con los objetivos corporativos.
+            </p>
+        </div>
+
+        <div class="activity-block reveal">
+            <h2 class="activity-title">Gestión Administrativa</h2>
+            <div class="activity-desc">
+                <p>Control total del área de TI, asegurando la optimización de recursos y cumplimiento presupuestal.</p>
+                <ul>
+                    <li>Administración integral del <strong>inventario tecnológico</strong>: servidores, cómputo, telefonía y dispositivos móviles.</li>
+                    <li>Gestión de licenciamiento crítico (Windows, Adobe, SolidWorks).</li>
+                    <li>Planificación y control del presupuesto anual de compras en coordinación directa con Finanzas y Dirección General.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="activity-block reveal">
+            <h2 class="activity-title">Infraestructura y Redes</h2>
+            <div class="activity-desc">
+                <p>Diseño de arquitectura de red para áreas críticas (producción, laboratorios, oficinas) mediante planos técnicos y gráficos.</p>
+                <ul>
+                    <li>Administración de enlaces redundantes con <strong>Fortinet</strong> (4 proveedores: TotalPlay fibra/antena, Telmex, Megacable) garantizando conectividad ininterrumpida.</li>
+                    <li>Segmentación de red avanzada, control de tráfico y restricciones de navegación para optimizar el ancho de banda.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="activity-block reveal">
+            <h2 class="activity-title">Desarrollo ERP TOTVS</h2>
+            <div class="activity-desc">
+                <p>Desarrollo e implementación de soluciones personalizadas en <strong>ADVPL</strong> y administración de bases de datos <strong>SQL Server</strong> para optimizar módulos clave:</p>
+                <ul>
+                    <li><strong>SIGACOM (Compras):</strong> Gestión automatizada de facturas de entrada.</li>
+                    <li><strong>SIGAEST (Stock):</strong> Automatización de traslados y etiquetas personalizadas (Anel, HELLA, EATON).</li>
+                    <li><strong>SIGAFAT (Facturación):</strong> Lógica de remisiones y esquemas por cliente.</li>
+                    <li><strong>SIGAPCP (Producción):</strong> Control de tiempos, formulación y órdenes.</li>
+                    <li><strong>SIGAQMT/SIGAQIP (Calidad):</strong> Certificados de calidad automotriz y trazabilidad.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="activity-block reveal">
+            <h2 class="activity-title">Seguridad y Cumplimiento</h2>
+            <div class="activity-desc">
+                <p>Implementación de políticas robustas de ciberseguridad y documentación para <strong>auditorías ISO</strong>.</p>
+                <ul>
+                    <li>Sistema de respaldos críticos para SQL Server (TOTVS) y archivos compartidos.</li>
+                    <li>Administración de <strong>Kaspersky Endpoint Security</strong> (PC, Móviles) y monitoreo de amenazas.</li>
+                    <li>Gestión documental ISO: Planes de contingencia, DNC, AMEF, FODA y políticas de TI.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="activity-block reveal">
+            <h2 class="activity-title">Plataformas y BI</h2>
+            <div class="activity-desc">
+                <p>Transformación de datos en decisiones estratégicas mediante el desarrollo de tableros en <strong>Power BI</strong>.</p>
+                <ul>
+                    <li>Tableros Directivos: Cuentas por Pagar/Cobrar y análisis financiero.</li>
+                    <li>Operaciones: Planes de mantenimiento, control de facturación y CRM de Ventas.</li>
+                    <li>Administración de <strong>Office 365</strong>, Timbres fiscales (Edicom) y control de versiones Web (Git/WordPress).</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="activity-block reveal" style="border-bottom: 1px solid var(--divider);">
+            <h2 class="activity-title">Liderazgo de Equipo</h2>
+            <div class="activity-desc">
+                <p>Dirección de un equipo multidisciplinario de 5 especialistas, fomentando la eficiencia y el servicio al cliente.</p>
+                <ul>
+                    <li>Administración de Mesa de Ayuda (<strong>Zoho Desk</strong>) logrando un <strong>93% de satisfacción</strong> de usuarios.</li>
+                    <li>95% de cumplimiento en SLA de cierre de tickets.</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Luis Angel Caballero Jardón. © 2025</p>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

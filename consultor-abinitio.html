@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Consultor Ab Initio | Capgemini</title>
+    <!--<style>
+      
+    </style> -->
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="back-link">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+            Volver
+        </a>
+        <span style="font-size: 12px; color: var(--text-sec);">Experiencia</span>
+    </nav>
+
+    <header class="role-header">
+        <span class="role-eyebrow">Julio 2022 — Septiembre 2022</span>
+        <h1 class="role-title">Consultor Especializado en Ab Initio</h1>
+        <p class="role-meta">Capgemini</p>
+    </header>
+
+    <main class="content-container">
+        
+        <div class="reveal">
+            <p class="intro-text">
+                Proporcioné asesoría técnica especializada y diseñé soluciones de integración de datos que optimizaron la trazabilidad y disponibilidad de la información crítica. Mi enfoque transformó requerimientos funcionales en arquitecturas escalables dentro de la suite de <strong>Ab Initio</strong>.
+            </p>
+        </div>
+
+        <div class="activity-block reveal">
+            <h2 class="activity-title">Ingeniería ETL Avanzada</h2>
+            <div class="activity-desc">
+                <p>Diseño y desarrollo de pipelines de datos de alto rendimiento para la gestión de grandes volúmenes de información (Big Data).</p>
+                <ul>
+                    <li>Implementación de cargas incrementales y <em>full load</em> desde fuentes heterogéneas.</li>
+                    <li>Transformación, limpieza y consolidación de datos estructurados y no estructurados.</li>
+                    <li>Integración de ecosistemas complejos: <strong>Oracle, SQL Server, Teradata, DB2 y Hadoop</strong>.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="activity-block reveal">
+            <h2 class="activity-title">Automatización y Flujos</h2>
+            <div class="activity-desc">
+                <p>Orquestación de procesos críticos mediante <strong>Conduct>It</strong>, optimizando la ejecución tanto en Batch como en Tiempo Real.</p>
+                <ul>
+                    <li>Desarrollo de reglas de validación utilizando expresiones avanzadas para asegurar la integridad del dato.</li>
+                    <li>Monitoreo y gestión de incidencias para garantizar flujos de trabajo ininterrumpidos.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="activity-block reveal">
+            <h2 class="activity-title">Gobernanza y Estrategia</h2>
+            <div class="activity-desc">
+                <p>Colaboración activa en la definición de arquitecturas y mejores prácticas para equipos de BI y Analytics.</p>
+                <ul>
+                    <li>Participación en revisiones de arquitectura y definición de lineamientos de gobernanza de datos.</li>
+                    <li>Elaboración de <strong>documentación técnica detallada</strong> y capacitación a usuarios clave para asegurar la sostenibilidad operativa.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="activity-block reveal" style="border-bottom: 1px solid var(--divider);">
+            <h2 class="activity-title">Stack Tecnológico</h2>
+            <div class="activity-desc">
+                <p>Herramientas y lenguajes utilizados en el despliegue de soluciones:</p>
+                
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <h4>ETL / Workflow</h4>
+                        <p>Ab Initio GDE, Conduct>It, Express>It</p>
+                    </div>
+                    <div class="tech-item">
+                        <h4>Bases de Datos</h4>
+                        <p>Oracle, Teradata, SQL Server, DB2</p>
+                    </div>
+                    <div class="tech-item">
+                        <h4>Big Data</h4>
+                        <p>Hadoop HDFS, Hive</p>
+                    </div>
+                    <div class="tech-item">
+                        <h4>Lenguajes</h4>
+                        <p>SQL, Shell Scripting, Python</p>
+                    </div>
+                    <div class="tech-item">
+                        <h4>Control de Versiones</h4>
+                        <p>Git, SVN</p>
+                    </div>
+                    <div class="tech-item">
+                        <h4>Gestión & Monitoreo</h4>
+                        <p>Control-M, ServiceNow, Jira</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Luis Angel Caballero Jardón. © 2025</p>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
