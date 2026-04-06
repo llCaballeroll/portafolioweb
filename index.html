@@ -4,264 +4,198 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Portafolio | LuisCaballero</title>
- <!----
-<style>
-
-</style>
-
- -->  
+    <title>Portafolio | Luis Ángel Caballero</title>
 </head>
 <body>
 
 <nav class="navbar">
-    <h1 class="logo">Luis Angel Caballero Jardon.</h1>
+    <h1 class="logo">Luis <span>Caballero</span></h1>
 
-    <!-- Botón hamburguesa -->
     <div class="hamburger" id="hamburger">
         <span></span>
         <span></span>
         <span></span>
     </div>
 
-    <!-- Menú -->
     <ul class="nav-links" id="nav-links">
-        <!-- Añadimos onclick="closeMenu()" a los enlaces internos -->
         <li><a href="#work" onclick="closeMenu()">Experiencia</a></li>
         <li><a href="#projects" onclick="closeMenu()">Proyectos</a></li>
-        <li><a href="#education" onclick="closeMenu()">Escuela</a></li>
         <li><a href="#skills" onclick="closeMenu()">Habilidades</a></li>
-        <!-- Los enlaces externos no necesitan closeMenu, pero se los añadimos por consistencia -->
-        <li><a href="contacto.html">Contactame</a></li>
-        <li><a href="documentos.html">Documentos oficiales</a></li>
+        <li><a href="#education" onclick="closeMenu()">Educación</a></li>
+        <li><a href="documentos.html">Documentos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
     </ul>
 </nav>
 
+<div class="container">
+    
+    <header class="hero reveal">
+        <h2>Ingeniería.<br>Desarrollo Móvil.<br>Gestión TI.</h2>
+        <p>Transformo necesidades tecnológicas en soluciones robustas mediante el desarrollo de software multiplataforma y la gestión integral de infraestructura.</p>
+    </header>
 
-    <div class="container">
-        
-        <header class="hero reveal">
-            <h2>Tecnología.<br>Desarrollo.<br>Resultados.</h2>
-            <p>Transformo necesidades tecnológicas en soluciones robustas mediante diseño, análisis, programación y gestión integral de TI.</p>
-        </header>
-
-        <section id="profile" class="reveal">
-            <div class="bio-container">
-                <p class="bio-text">
-                    Cuento con más de <strong>8 años de experiencia</strong> gestionando infraestructuras tecnológicas, desarrollando sistemas ERP (especialmente en <strong>TOTVS con ADVPL</strong>), diseñando tableros en Power BI y liderando proyectos de integración de datos con plataformas como <strong>Ab Initio</strong>.
-                </p>
-                <p class="bio-text">
-                    Mi enfoque combina habilidades técnicas profundas —como desarrollo de procesos ETL, administración de bases de datos SQL Server y automatización— con capacidades de gestión de equipos, soporte técnico y toma de decisiones estratégicas. He contribuido directamente a la mejora de la eficiencia operativa, calidad de los datos y ciberseguridad.
-                </p>
-                <p class="bio-text" style="margin-bottom: 0;">
-                    <span class="bio-highlight">Objetivo:</span> Asumir posiciones de Gerente de TI, Líder de Desarrollo o Consultor Técnico Senior, aportando en la dirección tecnológica y en el desarrollo de soluciones escalables alineadas al negocio.
-                </p>
-            </div>
-        </section>
-
-        <hr style="border: 0; border-top: 1px solid #e5e5e5; margin: 60px 0;">
-
-        <section id="work">
-            <h3 class="section-title reveal">Experiencia Laboral</h3>
-            <div class="grid-wrapper">
-                <div class="card reveal" onclick="window.location.href='gerente-ti.html'">
-                    <div>
-                        <div class="subtitle">septiembre 2022 — mayo 2025</div>
-                        <h3>Gerente de Tecnologías de la Información</h3>
-                        <div class="subtitle" style="color:var(--accent)">Resinas Colores y Compuestos</div>
-                    </div>
-                    <p>Dirigí la operación y evolución tecnológica de la empresa, fortaleciendo infraestructura, seguridad y sistemas críticos.</p>
-                </div>
-                <div class="card reveal" onclick="window.location.href='consultor-abinitio.html'">
-                    <div>
-                        <div class="subtitle">julio 2022 — septiembre 2022</div>
-                        <h3>Consultor especializado en AB Initio</h3>
-                        <div class="subtitle" style="color:var(--accent)">Capgemini</div>
-                    </div>
-                   <p>Brindé soporte especializado y ejecuté procesos de integración de datos en entornos corporativos de alto volumen.</p>
-                </div>
-                <div class="card reveal" onclick="window.location.href='auxiliar-ti.html'">
-                    <div>
-                        <div class="subtitle">septiembre 2022 — mayo 2025</div>
-                        <h3>Auxiliar de tecnologías de la información</h3>
-                        <div class="subtitle" style="color:var(--accent)">Resinas Colores y Compuestos</div>
-                    </div>
-                    <p>Di soporte a usuarios, redes y sistemas, apoyando la continuidad operativa y la mejora tecnológica del entorno.</p>
-                </div>
-            </div>
-        </section>
-
-        <div class="containerdiv"></div>
-        <div class="containerdiv"></div>
-
-        <section id="projects">
-            <h3 class="section-title reveal">Proyectos Destacados</h3>
-            <div class="grid-wrapper">
-                <article class="card project-card reveal">
-                    <div style="height: 250px; background: #333; overflow:hidden;">
-                      <!-- 
-                        <img src="https://via.placeholder.com/600x400/1d1d1f/FFFFFF?text=Proyecto+App" class="project-img" alt="Proyecto 1">
-                      -->
-                       <img src="img/FSA.png" class="project-img" alt="Proyecto FSA">
-
-                    </div>
-                    <div class="project-content">
-                        <h3>FortStatsAPP</h3>
-                        <p>UI Design & Desarrollo Swift</p>
-                    </div>
-                </article>
-                
-                <article class="card project-card reveal">
-                     <div style="height: 250px; background: #222; overflow:hidden;">
-                        <img src="img/ecomerce.png" class="project-img" alt="Proyecto Ecomerce">
-                    </div>
-                    <div class="project-content">
-                        <h3>E-commerce Web</h3>
-                        <p>React & Node.js</p>
-                    </div>
-                </article>
-
-                <article class="card project-card reveal">
-    <a href="https://llcaballeroll.github.io/snake_islands_web/" target="_blank" style="text-decoration:none; color:inherit;">
-        <div style="height: 250px; background: #111; overflow:hidden;">
-            <img src="img/snake.png" class="project-img" alt="Proyecto Snake">
+    <section id="profile" class="reveal">
+        <div style="background: rgba(255,255,255,0.02); padding: 30px; border-radius: 12px; border: 1px solid var(--border-color); margin-top: 40px;">
+            <p style="color: var(--text-muted); margin-bottom: 15px;">
+                Ingeniero en Tecnologías de la Información con más de <strong>5 años de experiencia</strong>. Destaco en el liderazgo de operaciones de TI y el desarrollo de software multiplataforma. 
+            </p>
+            <p style="color: var(--text-muted); margin-bottom: 15px;">
+                Cuento con un historial comprobado dirigiendo equipos tecnológicos, administrando infraestructura (redes, servidores, ciberseguridad Fortinet) y automatizando procesos con <strong>ERP TOTVS</strong>. Paralelamente, soy <strong>Desarrollador Mobile (Flutter/Dart)</strong> con experiencia en el ciclo completo de vida del software, desde el código hasta la monetización en tiendas.
+            </p>
+            <p style="color: var(--text-main); font-weight: 600;">
+                Objetivo: Alinear soluciones tecnológicas complejas con los objetivos estratégicos del negocio.
+            </p>
         </div>
-        <div class="project-content">
-            <h3>Snake Islands</h3>
-            <p>Flutter Game Programming</p>
+    </section>
+
+    <hr>
+
+    <section id="work">
+        <h3 class="section-title reveal">Experiencia Profesional</h3>
+        <div class="grid-wrapper">
+            
+            <div class="card reveal" onclick="window.location.href='freelance-flutter.html'">
+                <div>
+                    <div class="subtitle">Mayo 2025 — Actualidad</div>
+                    <h3>Desarrollador Mobile (Flutter) Independiente</h3>
+                    <div class="subtitle" style="color:var(--text-main)">Trabajo Remoto</div>
+                </div>
+                <p>Diseñé, desarrollé y publiqué 3 aplicaciones móviles para Android/iOS. Lidero la creación de plataformas corporativas usando Supabase y Flame Engine.</p>
+            </div>
+
+            <div class="card reveal" onclick="window.location.href='gerente-ti.html'">
+                <div>
+                    <div class="subtitle">Septiembre 2022 — Mayo 2025</div>
+                    <h3>Gerente de Tecnologías de la Información</h3>
+                    <div class="subtitle" style="color:var(--text-main)">Resinas Colores y Compuestos</div>
+                </div>
+                <p>Lideré un equipo de 5 profesionales, administré infraestructura corporativa, ciberseguridad (Fortinet) y dirigí la implementación del ERP TOTVS.</p>
+            </div>
+
+            <div class="card reveal" onclick="window.location.href='consultor-etl.html'">
+                <div>
+                    <div class="subtitle">Julio 2022 — Septiembre 2022</div>
+                    <h3>Consultor de Datos (ETL)</h3>
+                    <div class="subtitle" style="color:var(--text-main)">Capgemini</div>
+                </div>
+               <p>Participé en el análisis de procesos de negocio y evalué flujos de extracción, transformación y carga para grandes volúmenes de información empresarial.</p>
+            </div>
+
+            <div class="card reveal" onclick="window.location.href='auxiliar-ti.html'">
+                <div>
+                    <div class="subtitle">Agosto 2019 — Julio 2022</div>
+                    <h3>Auxiliar de Tecnologías de la Información</h3>
+                    <div class="subtitle" style="color:var(--text-main)">Resinas Colores y Compuestos</div>
+                </div>
+                <p>Brindé soporte técnico integral, administré redes y desarrollé módulos personalizados para el ERP corporativo utilizando ADVPL y Java.</p>
+            </div>
+
         </div>
-    </a>
-</article>
+    </section>
 
-            </div>
-        </section>
+    <hr>
 
-        <div class="containerdiv"></div>
-        <div class="containerdiv"></div>
-
-        <section id="education">
-            <h3 class="section-title reveal">Educación</h3>
-            <div class="card reveal" style="margin-bottom: 20px;">
-                <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;">
-                    <h3>Ingeniería en Tecnologías de la Información y Comunicación</h3>
-                    <span class="subtitle">septiembre 2017 — mayo 2021</span>
+    <section id="projects">
+        <h3 class="section-title reveal">Aplicaciones Destacadas</h3>
+        <div class="grid-wrapper">
+            
+            <article class="card project-card reveal">
+                <a href="https://llcaballeroll.github.io/amon_oracle_web/techspecs.html" target="_blank" style="text-decoration:none; color:inherit;">
+                <div style="height: 200px; background: #0a0a0a; overflow:hidden;">
+                   <img src="img/amon.png" class="project-img" alt="Amon The Mystic Oracle" onerror="this.src='https://via.placeholder.com/600x400/1d1d1f/3b82f6?text=Amon+Oracle'">
                 </div>
-                <p class="subtitle" style="color: var(--text-main);">Universidad Tecnológica del Valle de Toluca</p>
-                <p>Especialización en Desarrollo de Software y Gestión de Proyectos.</p>
-            </div>
-            <!---<div class="card reveal">
-                <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;">
-                    <h3>Certificación UX Google</h3>
-                    <span class="subtitle">2021</span>
+                <div class="project-content">
+                    <h3>Amon: The Mystic Oracle</h3>
+                    <p>Flutter Mobile App</p>
                 </div>
-                <p class="subtitle" style="color: var(--text-main);">Coursera</p>
-            </div> --->
-        </section>
-
-        <div class="containerdiv"></div>
-        <div class="containerdiv"></div>
-<!---
-
-        <section id="skills">
-           <h3 class="section-title reveal">Habilidades</h3>
-                <div class="skills-container reveal">
-                    <span class="skill-pillprin">Administración de TI</span>
-                    <span class="skill-pillprin">Gestión de Infraestructura</span>
-                    <span class="skill-pillprin">Ciberseguridad</span>
-                    <span class="skill-pillprin">Desarrollo Web</span>
-                    <span class="skill-pillprin">Soporte Técnico Avanzado</span>
-                    <span class="skill-pillprin">Gestión de Proyectos</span>
-                    <span class="skill-pillprin">Análisis y Resolución de Problemas</span>
-                    <span class="skill-pillprin">Documentación Técnica</span>
-                    <span class="skill-pillprin">Administración de Bases de Datos</span>
-                    <span class="skill-pillprin">Administración de ERP</span>
---->
-                    <!--<span class="skill-pill" onclick="window.location.href='habilidades.html'" style="cursor: pointer; color: var(--accent); border: 1px solid var(--accent); background: transparent;">+ Ver listado completo</span>
-                -->
-
-<!--
-                </div>
-
-                <div class="skills-button-container reveal">
-                    <a href="habilidades.html" class="skills-button">Ver todas las habilidades</a>
-             </div>
-
-        </section>
-
-
---->
-
-<section id="skills">
-            <div style="display: flex; justify-content: space-between; align-items: end; margin-bottom: 30px;">
-                <h3 class="section-title reveal" style="margin-bottom: 0;">Habilidades</h3>
-            </div>
-
-            <!-- Usamos el mismo grid moderno que en la otra página -->
-            <div class="modern-grid reveal">
-                
-                <!-- Gestión (Azul) -->
-                <div class="skill-card-modern border-blue">
-                    <span class="skill-name">Administración de TI</span>
-                </div>
-                <div class="skill-card-modern border-blue">
-                    <span class="skill-name">Gestión de Proyectos</span>
-                </div>
-
-                <!-- Infraestructura (Verde) -->
-                <div class="skill-card-modern border-green">
-                    <span class="skill-name">Infraestructura</span>
-                </div>
-                <div class="skill-card-modern border-green">
-                    <span class="skill-name">ERP TOTVS</span>
-                </div>
-
-                <!-- Desarrollo (Morado) -->
-                <div class="skill-card-modern border-purple">
-                    <span class="skill-name">Programación</span>
-                </div>
-                <div class="skill-card-modern border-purple">
-                    <span class="skill-name">Bases de Datos</span>
-                </div>
-                
-
-                <!-- Soporte (Naranja) -->
-                <div class="skill-card-modern border-orange">
-                    <span class="skill-name">Desarrollo Web</span>
-                </div>
-                <div class="skill-card-modern border-orange">
-                    <span class="skill-name">Ciberseguridad</span>
-                </div>
-
-                <!--
-                <div class="skill-card-modern border-orange">
-                    <span class="skill-name">Resolución Problemas</span>
-                </div>
-                -->
-                
-            </div>
-
-            <div class="containerdiv"></div>
-
-            <!-- Botón mejorado -->
-            <div class="reveal" style="text-align: center;">
-                <a href="habilidades.html" class="btn-view-all">
-                    Ver todas las habilidades
-                    <!-- Flecha SVG -->
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </a>
+            </article>
+
+            <article class="card project-card reveal">
+                <a href="https://llcaballeroll.github.io/bounce_royale_web/" target="_blank" style="text-decoration:none; color:inherit;">
+                <div style="height: 200px; background: #1a1a1a; overflow:hidden;">
+                   <img src="img/bounce.png" class="project-img" alt="Bounce Royale" onerror="this.src='https://via.placeholder.com/600x400/1d1d1f/3b82f6?text=Bounce+Royale'">
+                </div>
+                <div class="project-content">
+                    <h3>Bounce Royale</h3>
+                    <p>Flutter Game (Flame Engine)</p>
+                </div>
+                </a>
+            </article>
+            
+            <article class="card project-card reveal">
+                <a href="https://llcaballeroll.github.io/snake_islands_web/" target="_blank" style="text-decoration:none; color:inherit;">
+                <div style="height: 200px; background: #0f172a; overflow:hidden;">
+                    <img src="img/snake.png" class="project-img" alt="Snake Islands" onerror="this.src='https://via.placeholder.com/600x400/1d1d1f/3b82f6?text=Snake+Islands'">
+                </div>
+                <div class="project-content">
+                    <h3>Snake Islands</h3>
+                    <p>Flutter Game Programming</p>
+                </div>
+                </a>
+            </article>
+
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="skills">
+        <h3 class="section-title reveal">Habilidades Tecnológicas</h3>
+        <div class="modern-grid reveal" style="margin-top: 25px;">
+            <div class="skill-card-modern">Desarrollo Mobile (Flutter / Dart)</div>
+            <div class="skill-card-modern">Gestión de TI & Liderazgo</div>
+            <div class="skill-card-modern">Ciberseguridad & Redes (Fortinet)</div>
+            <div class="skill-card-modern">ERP TOTVS (ADVPL / Java)</div>
+            <div class="skill-card-modern">Bases de Datos (SQL Server)</div>
+            <div class="skill-card-modern">Análisis de Datos (Power BI / ETL)</div>
+            <div class="skill-card-modern">Windows Server (2016-2025)</div>
+            <div class="skill-card-modern">Linux (EndeavourOS / Arch)</div>
+            <div class="skill-card-modern">Backend (Supabase / APIs)</div>
+        </div>
+
+        <div class="reveal" style="text-align: center; margin-top: 40px;">
+            <a href="habilidades.html" class="btn-view-all">
+                Ver detalle de habilidades
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="education">
+        <h3 class="section-title reveal">Educación</h3>
+        <div class="card reveal">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;">
+                <h3>Ingeniería en Tecnologías de la Información</h3>
+                <span class="subtitle">2017 — 2021</span>
             </div>
+            <p style="color: var(--text-main); font-weight: 600;">Universidad Tecnológica del Valle de Toluca</p>
+            <p style="margin-top: 10px;">Especialización en Desarrollo de Software, Gestión de Proyectos e Infraestructura TI. (Titulado)</p>
+            <p style="margin-top: 10px; color: var(--accent);"><strong>Idioma:</strong> Inglés Técnico B1</p>
+        </div>
+    </section>
+    
+    <hr>
 
-        </section>
-        
-    </div>
+    <section id="documentos" class="reveal" style="text-align: center; padding-bottom: 20px;">
+        <h3 class="section-title" style="padding-top: 0;">Documentos Oficiales</h3>
+        <p style="color: var(--text-muted); margin-bottom: 30px;">Accede a mi currículum completo, título universitario y constancias laborales.</p>
+        <a href="documentos.html" class="btn-view-all">
+            Ver y Descargar Documentos
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        </a>
+    </section>
 
-    <footer>
-        <p>Luis Angel Caballero Jardón. © 2025</p>
-    </footer>
+</div>
 
-<!-- Agrega la función closeMenu() y el script del hamburguesa al final del body -->
+<footer>
+    <p>Luis Ángel Caballero Jardón. © 2026</p>
+</footer>
+
 <script>
-    // Intersection Observer para animaciones al hacer scroll
+    // Intersection Observer para animaciones fluidas al hacer scroll
     const observerOptions = {
         threshold: 0.1,
         rootMargin: "0px 0px -50px 0px"
@@ -279,9 +213,7 @@
         observer.observe(el);
     });
 
-    /* -----------------------------
-       MENÚ HAMBURGUESA
-    ------------------------------ */
+    // Lógica del Menú Hamburguesa
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.getElementById('nav-links');
 
@@ -295,7 +227,6 @@
         navLinks.classList.toggle('active');
     });
 </script>
-
 
 </body>
 </html>

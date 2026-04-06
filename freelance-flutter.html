@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Desarrollador Mobile (Flutter) | Freelance</title>
+</head>
+<body>
+
+    <nav class="back-nav">
+        <a href="index.html" class="back-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            Volver al Portafolio
+        </a>
+        <span style="color: var(--text-muted); font-weight: 600; font-size: 0.9rem;">Experiencia en Desarrollo</span>
+    </nav>
+
+    <main class="container">
+        
+        <header class="page-header reveal">
+            <span>Mayo 2025 — Actualidad</span>
+            <h1>Desarrollador Mobile Independiente</h1>
+            <p>Especialista en Flutter y Dart | Trabajo Remoto</p>
+        </header>
+
+        <div class="reveal" style="text-align: center; margin-bottom: 50px;">
+            <p style="color: var(--text-muted); font-size: 1.1rem; max-width: 800px; margin: 0 auto;">
+                Dirijo el ciclo de vida completo del desarrollo de software móvil, desde la arquitectura y programación hasta la publicación y monetización en tiendas. Especializado en crear experiencias fluidas tanto para entretenimiento (gaming) como para soluciones corporativas escalables.
+            </p>
+        </div>
+
+        <div class="detail-card reveal">
+            <h2>Aplicaciones Publicadas (Gaming & Utilidades)</h2>
+            <p>Diseño y programación de aplicaciones multiplataforma actualmente disponibles en Android, con arquitectura preparada para su próximo lanzamiento en iOS.</p>
+            <ul>
+                <li><strong>Amon: The Mystic Oracle:</strong> <span class="status-badge status-published">Publicada</span><br>
+                    Desarrollo de una aplicación interactiva. Implementación de lógicas complejas de estado, animaciones fluidas y gestión de audio inmersivo.
+                </li>
+                <li><strong>Bounce Royale (Jump & VS):</strong> <span class="status-badge status-published">Publicada</span><br>
+                    Juego desarrollado utilizando el motor <strong>Flame Engine</strong> para Flutter. Implementación de físicas de colisión, mecánicas competitivas y optimización de renderizado en tiempo real.
+                </li>
+                <li><strong>Snake Islands (Arcade Classic):</strong> <span class="status-badge status-published">Publicada</span><br>
+                    Reimaginación del clásico juego Arcade. Integración profunda con servicios de <em>backend</em> (Game Center y Google Play Games) para gestión de puntajes y logros.
+                </li>
+            </ul>
+        </div>
+
+        <div class="detail-card reveal">
+            <h2>Proyectos Corporativos (B2B / B2C)</h2>
+            <p>Desarrollo de soluciones empresariales utilizando <strong>Supabase</strong> como backend as a service (BaaS) para bases de datos en tiempo real, autenticación segura y almacenamiento.</p>
+            <ul>
+                <li><strong>App de Delivery Gastronómico:</strong> <span class="status-badge status-beta">Betas Finales</span><br>
+                    Plataforma estilo "DiDi Food" diseñada para un restaurante local. Arquitectura compleja que gestiona múltiples perfiles (usuario, restaurante, repartidor), geolocalización, gestión de carrito de compras, pasarela de pagos y notificaciones en tiempo real. Actualmente en fase de pruebas finales antes de producción.
+                </li>
+                <li><strong>App Integral de Gestión para Gimnasios:</strong> <span class="status-badge status-dev">En Desarrollo</span><br>
+                    Plataforma enfocada en la salud y el fitness. Permite a los usuarios registrar rutinas personalizadas, gestionar planes de dieta y establecer contacto directo con nutriólogos y entrenadores a través de la aplicación. Arquitectura enfocada en escalabilidad y privacidad de datos de salud.
+                </li>
+            </ul>
+        </div>
+
+        <div class="detail-card reveal">
+            <h2>Arquitectura y Tecnologías Implementadas</h2>
+            <p>Estándares técnicos aplicados en todos mis proyectos independientes para garantizar seguridad, escalabilidad y un código mantenible.</p>
+            <ul>
+                <li><strong>Monetización:</strong> Implementación y configuración de In-App Purchases (compras dentro de la app) y gestión de suscripciones para ambas plataformas (App Store / Play Store).</li>
+                <li><strong>Backend & Base de Datos:</strong> Dominio de Supabase (PostgreSQL en tiempo real, Auth, Storage) y consumo de APIs RESTful.</li>
+                <li><strong>Motores y Paquetes Clave:</strong> Flame Engine (para físicas y renderizado de juegos 2D), Provider/Riverpod (gestión de estado), y manejo avanzado de assets multimedia (audio/video).</li>
+                <li><strong>Control de Versiones y Despliegue:</strong> Git, GitHub y procesos de empaquetado para distribución en tiendas oficiales.</li>
+            </ul>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Luis Ángel Caballero Jardón. © 2026</p>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

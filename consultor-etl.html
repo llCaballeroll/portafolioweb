@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Consultor de Datos (ETL) | Capgemini</title>
+</head>
+<body>
+
+    <nav class="back-nav">
+        <a href="index.html" class="back-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            Volver al Portafolio
+        </a>
+        <span style="color: var(--text-muted); font-weight: 600; font-size: 0.9rem;">Experiencia Consultoría</span>
+    </nav>
+
+    <main class="container">
+        
+        <header class="page-header reveal">
+            <span>Julio 2022 — Septiembre 2022</span>
+            <h1>Consultor Especializado en Ab Initio</h1>
+            <p>Capgemini | Trabajo Remoto</p>
+        </header>
+
+        <div class="reveal" style="text-align: center; margin-bottom: 50px;">
+            <p style="color: var(--text-muted); font-size: 1.1rem; max-width: 800px; margin: 0 auto;">
+                Proporcioné asesoría técnica especializada y evalué soluciones de integración de datos que optimizaron la trazabilidad y disponibilidad de la información crítica. Mi enfoque consistió en analizar requerimientos funcionales para flujos de grandes volúmenes de información en la suite de <strong>Ab Initio</strong>.
+            </p>
+        </div>
+
+        <div class="detail-card reveal">
+            <h2>Ingeniería ETL Avanzada</h2>
+            <p>Análisis y evaluación de pipelines de datos de alto rendimiento para la gestión de Big Data corporativo.</p>
+            <ul>
+                <li><strong>Procesamiento de datos:</strong> Análisis de cargas incrementales y <em>full load</em> desde fuentes heterogéneas.</li>
+                <li><strong>Calidad de la información:</strong> Evaluación de procesos de transformación, limpieza y consolidación de datos estructurados y no estructurados.</li>
+                <li><strong>Ecosistemas complejos:</strong> Integración teórica y práctica con bases de datos como Oracle, SQL Server, Teradata, DB2 y Hadoop.</li>
+            </ul>
+        </div>
+
+        <div class="detail-card reveal">
+            <h2>Automatización, Flujos y Gobernanza</h2>
+            <p>Colaboración activa en la definición de mejores prácticas y orquestación de procesos para equipos de Business Intelligence.</p>
+            <ul>
+                <li><strong>Orquestación:</strong> Análisis de procesos críticos mediante <strong>Conduct>It</strong>, evaluando la ejecución en Batch y en Tiempo Real.</li>
+                <li><strong>Reglas de negocio:</strong> Revisión de reglas de validación utilizando expresiones avanzadas para asegurar la integridad del dato.</li>
+                <li><strong>Documentación y Gobernanza:</strong> Elaboración de documentación técnica detallada, participando en revisiones de arquitectura y lineamientos de gobierno de datos corporativos.</li>
+            </ul>
+        </div>
+
+        <div class="detail-card reveal">
+            <h2>Stack Tecnológico Analizado</h2>
+            <p>Herramientas, lenguajes y plataformas comprendidas en el entorno corporativo durante la consultoría:</p>
+            <ul>
+                <li><strong>ETL / Workflow:</strong> Ab Initio GDE, Conduct>It, Express>It.</li>
+                <li><strong>Bases de Datos & Big Data:</strong> Oracle, Teradata, SQL Server, DB2, Hadoop HDFS, Hive.</li>
+                <li><strong>Lenguajes & Scripts:</strong> Consultas avanzadas en SQL, Shell Scripting y nociones de Python.</li>
+                <li><strong>Control y Monitoreo:</strong> Git, SVN, Control-M, ServiceNow y Jira.</li>
+            </ul>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Luis Ángel Caballero Jardón. © 2026</p>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
